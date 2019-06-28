@@ -7,18 +7,19 @@
     <meta name="keywords" content="Emily">
     <meta name="author" content="Edestiny7">
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Header Starts -->
     <header> 
-        <div>
+        <div class="divPadding">
             <div>
                 <h1>Emily Rose</h1>
                 <nav>
                     <a href = "index.html" title="About Me">About</a>
-                    <a href="portfolio.html" title="Portfolio">Portfolio</a>
-                    <a href="contact.html" title="Contact Info">Contact</a>
+                    <a style="border-left: thick solid lightgray; padding-left:5px;" href="portfolio.html" title="Portfolio">Portfolio</a>
+                    <a style="border-left: thick solid lightgray; padding-left:5px;" href="contact.html" title="Contact Info">Contact</a>
                 </nav>
             </div>
          </div>
@@ -26,22 +27,30 @@
     <!-- Header Ends -->
 
     <!-- Main Starts -->
-    <main>
-        <div> 
-            <div>
+    <main style="background-image: url(./assets/images/white-waves.png);">
+        <div class="divPadding"> 
+            <div class="divWidth">
                 <!-- Article Starts -->
                 <article>   
                     <h2>Contact</h2>
                     <hr>
-                    <div>
-                        <label>Name</label><br>
-                        <input><br>          
-                        <label>Email</label><br>
-                        <input><br>  
-                        <label>Message</label><br>
-                        <input><br>
+                    <div class="contactFields">
+                        <div style="padding-top:20px;">
+                            <label>Name</label><br>
+                            <input>
+                        </div>
+                        <br> 
+                        <div>         
+                            <label>Email</label><br>
+                            <input>                            
+                        </div>
+                        <br> 
+                        <div> 
+                            <label>Message</label><br>
+                            <textarea rows="10" class="message"></textarea>
+                        </div>
+                        <br>
                         <button>Submit</button>
-
                     </div>  
                 </article>  
                 <!-- Article Ends -->
@@ -52,7 +61,7 @@
 
     <!-- Footer Starts -->
     <footer>
-            <span>Copyright</span>
+            <div>Copyright &copy;</div>
     </footer> 
     <!--Footer Ends -->
 
